@@ -16,13 +16,24 @@ __version__ = "1.2"
 
 
 def ej1():
-    print('Ejercicios de práctica con números')
+  print('Ejercicios de práctica con números')
 
-    '''
-    Realice un programa que solicite por consola 2 números
-    Calcule la diferencia entre ellos e informe por pantalla
-    si el resultado es positivo, negativo o cero.
-    '''
+  '''
+  Realice un programa que solicite por consola 2 números
+  Calcule la diferencia entre ellos e informe por pantalla
+  si el resultado es positivo, negativo o cero.
+  '''
+  print("Ingrese dos numeros:")
+  numero_1 = float(input())
+  numero_2 = float(input())
+  diferencia = numero_1 - numero_2
+
+  if diferencia > 0:
+    print("La diferencia entre {} y {} es un numero positivo".format(numero_1,numero_2))
+  elif diferencia < 0:
+    print("La diferencia entre {} y {} es un numero negativo".format(numero_1,numero_2))
+  else:
+    print("La diferencia entre {} y {} es cero".format(numero_1,numero_2))
 
 
 def ej2():
@@ -34,6 +45,27 @@ def ej2():
     o impar.
     Para cada caso imprimir el resultado en pantalla.
   '''
+  print("Ingrese 3 numeros enteros:")
+
+  num_int_1 = int(input())
+  num_int_2 = int(input())
+  num_int_3 = int(input())
+
+  if num_int_1 % 2:
+    print("{} es par".format(num_int_1))
+  else:
+    print("{} es impar".format(num_int_1))
+  
+  if num_int_2 % 2:
+    print("{} es par".format(num_int_2))
+  else:
+    print("{} es impar".format(num_int_2))
+  
+  if num_int_3 % 2:
+    print("{} es par".format(num_int_3))
+  else:
+    print("{} es impar".format(num_int_3))
+
 
 
 def ej3():
@@ -52,6 +84,19 @@ def ej3():
     Se debe efectuar el cálculo correcto según la operación ingresada por consola
     Imprimir en pantalla la operación realizada y el resultado
     '''
+  print("Ingrese dos numeros:")
+
+  calc_1 = float(input())
+  calc_2 = float(input())
+
+  print("Ingrese el simbolo de la operacion que quiere realizar con estos dos numeros:")
+
+  operacion = str(float())
+
+  if operacion == + :
+    print("El resultado de sumar {} con {} es {}".format(calc_1,calc_2, calc_1 + calc_2))
+ 
+
 
 
 def ej4():
@@ -86,8 +131,8 @@ def ej5():
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    ej1()
-    #ej2()
+    #ej1()
+    ej2()
     #ej3()
     #ej4()
     #ej5()
