@@ -37,13 +37,13 @@ def ej1():
 
 
 def ej2():
-		print('Ejercicios de práctica con números')
+	print('Ejercicios de práctica con números')
 
 	'''
-		Realice un programa que solicite el ingreso de tres números
-		enteros, y luego en cada caso informe si el número es par
-		o impar.
-		Para cada caso imprimir el resultado en pantalla.
+	Realice un programa que solicite el ingreso de tres números
+	enteros, y luego en cada caso informe si el número es par
+	o impar.
+	Para cada caso imprimir el resultado en pantalla.
 	'''
 	print("Ingrese 3 numeros enteros:")
 
@@ -69,21 +69,21 @@ def ej2():
 
 
 def ej3():
-		print('Ejercicios de práctica con números')
+	print('Ejercicios de práctica con números')
 
-		'''
-		Realice una calculadora, se ingresará por línea de comando dos números
-		Luego se ingresará como tercera entrada al programa el símbolo de la operación
-		que se desea ejecutar
-		- Suma (+)
-		- Resta (-)
-		- Multiplicación (*)
-		- División (/)
-		- Exponente/Potencia (**)
+	'''
+	Realice una calculadora, se ingresará por línea de comando dos números
+	Luego se ingresará como tercera entrada al programa el símbolo de la operación
+	que se desea ejecutar
+	- Suma (+)
+	- Resta (-)
+	- Multiplicación (*)
+	- División (/)
+	- Exponente/Potencia (**)
 
-		Se debe efectuar el cálculo correcto según la operación ingresada por consola
-		Imprimir en pantalla la operación realizada y el resultado
-		'''
+	Se debe efectuar el cálculo correcto según la operación ingresada por consola
+	Imprimir en pantalla la operación realizada y el resultado
+	'''
 	print("Ingrese dos numeros:")
 
 	calc_1 = float(input())
@@ -93,7 +93,7 @@ def ej3():
 
 	operacion = str(float())
 
-	if operacion == + :
+	if operacion == "+":
 		print("El resultado de sumar {} con {} es {}".format(calc_1,calc_2, calc_1 + calc_2))
  
 
