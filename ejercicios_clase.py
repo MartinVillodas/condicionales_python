@@ -67,7 +67,6 @@ def ej2():
 
     texto_2 = str(input('Ingrese la segunda palabra:\n'))
 
-    copia_texto_1 = texto_1 # Copia de la variable texto_1
 
     # Compare cual de las dos palabras es mayor (alfabéticamente)
     # Imprima en pantalla según corresponda
@@ -96,6 +95,8 @@ def ej2():
         print("La primer letra de {} es mayor a la primer letra de {}".format(texto_2,texto_1))
 
 
+    copia_texto_1 = texto_1 # Copia de la variable texto_1
+    
     # Verifique que copia_texto_1 es igual a texto_1
     # Imprima en pantalla según corresponda
 
@@ -131,6 +132,16 @@ def ej3():
     #       --> En caso afirmativo imprima en pantalla "Resp=3"
     #       --> En caso negativo imprima en pantalla "Resp=4"
 
+    if numero_1 > 5:
+        if numero_2 > 0:
+            print("Resp=1")
+        else:
+            print("Resp=2")
+    elif numero_2 > 5:
+        print("Resp=3")
+    else:
+        print("Resp=4")
+
     # Verifique la calificación de un estudiante según su
     # puntaje en un examen
     puntaje = 70
@@ -139,11 +150,22 @@ def ej3():
     # Si el puntaje es mayor igual a 80 --> imprimir B
     # Si el puntaje es mayor igual a 70 --> imprimir C
     # Si el puntaje es mayor igual a 60 --> imprimir D
-    # Si el puntaje es manor a  60      --> imprimir F
+    # Si el puntaje es menor a  60      --> imprimir F
 
     # Debe imprimir en pantalla la calificacion
     # Utilizar "if" anidados
 
+    if puntaje >= 90:
+        print("A")
+    elif puntaje >= 80:
+        print("B")
+    elif puntaje >= 70:
+        print("C")
+    elif puntaje >= 60:
+        print("D")
+    elif puntaje <= 60:
+        print("F")
+    
 
 def ej4():
     # Ejemplos variables de texto
@@ -151,11 +173,19 @@ def ej4():
     texto_1 = '5'
     texto_2 = '7'
 
-    # Verifique cual cual de los dos textos es mayor alfabéticamente
+    # Verifique cual de los dos textos es mayor alfabéticamente
     # Imprima en pantalla según corresponda
+
+    if texto_1 > texto_2:
+        print("{} es mayor alfabeticamente que {}".format(texto_1,texto_2))
+    else:
+        print("{} es mayor alfabeticamente que {}".format(texto_2,texto_1))
 
     # Transforma esas variables tipo texto y almacénalas
     # en nuevas variables númericas (int)
+
+    
+
     # Repita el proceso, ¿Cuál de las nuevas variables es mayor?
     # Imprima en pantalla según corresponda
 
@@ -171,6 +201,6 @@ def ej4():
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     #ej1()
-    ej2()
+    #ej2()
     #ej3()
     #ej4()

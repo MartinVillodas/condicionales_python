@@ -114,7 +114,7 @@ def ej4():
 		Si se ingresa "2" por consola se deben ordenar las 3 palabras por cantidad de letras
 		e imprimir en pantalla de la mayor a la menor
 	'''
-
+	
 
 def ej5():
 		print('Ejercicios de práctica con números')
