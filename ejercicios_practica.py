@@ -52,19 +52,19 @@ def ej2():
 	num_int_3 = int(input())
 
 	if num_int_1 % 2:
-		print("{} es par".format(num_int_1))
-	else:
 		print("{} es impar".format(num_int_1))
+	else:
+		print("{} es par".format(num_int_1))
 	
 	if num_int_2 % 2:
-		print("{} es par".format(num_int_2))
-	else:
 		print("{} es impar".format(num_int_2))
+	else:
+		print("{} es par".format(num_int_2))
 	
 	if num_int_3 % 2:
-		print("{} es par".format(num_int_3))
-	else:
 		print("{} es impar".format(num_int_3))
+	else:
+		print("{} es par".format(num_int_3))
 
 
 
@@ -91,30 +91,79 @@ def ej3():
 
 	print("Ingrese el simbolo de la operacion que quiere realizar con estos dos numeros:")
 
-	operacion = str(float())
+	operacion = str(input())
 
 	if operacion == "+":
 		print("El resultado de sumar {} con {} es {}".format(calc_1,calc_2, calc_1 + calc_2))
+	elif operacion == "-":
+		print("El resultado de restar {} con {} es {}".format(calc_1,calc_2, calc_1 - calc_2))
+	elif operacion == "*":
+		print("El resultado de multiplicar {} con {} es {}".format(calc_1,calc_2, calc_1 * calc_2))
+	elif operacion == "/":
+		print("El resultado de dividir {} con {} es {}".format(calc_1,calc_2, calc_1 / calc_2))
+	elif operacion == "**":
+		print("{} elevado a la potencia {} es {}".format(calc_1,calc_2, calc_1 ** calc_2))
+	else:
+		print("El simbolo ingresado no corresponde a una operacion matematica")
  
 
 
 
 def ej4():
-		print('Ejercicios de práctica con cadenas')
+	print('Ejercicios de práctica con cadenas')
 
-		'''
-		Realice un programa que solicite por consola 3 palabras cualesquiera
-		Luego el programa debe consultar al usuario como quiere ordenar las palabras
-		1 - Ordenar por orden alfabético (usando el operador ">")
-		2 - Ordenar por cantidad de letras (longitud de la palabra)
+	'''
+	Realice un programa que solicite por consola 3 palabras cualesquiera
+	Luego el programa debe consultar al usuario como quiere ordenar las palabras
+	1 - Ordenar por orden alfabético (usando el operador ">")
+	2 - Ordenar por cantidad de letras (longitud de la palabra)
 
-		Si se ingresa "1" por consola se deben ordenar las 3 palabras por orden alfabético
-		e imprimir en pantalla de la mayor a la menor
+	Si se ingresa "1" por consola se deben ordenar las 3 palabras por orden alfabético
+	e imprimir en pantalla de la mayor a la menor
 
-		Si se ingresa "2" por consola se deben ordenar las 3 palabras por cantidad de letras
-		e imprimir en pantalla de la mayor a la menor
+	Si se ingresa "2" por consola se deben ordenar las 3 palabras por cantidad de letras
+	e imprimir en pantalla de la mayor a la menor
 	'''
 	
+	print("Porfavor ingrese 3 palabras que usted desee:")
+	palabra_1 = str(input())
+	palabra_2 = str(input())
+	palabra_3 = str(input())
+
+	print("Indique como desea ordenar las palabras que usted ingreso:")
+	print("Si desea ordenarlas en orden alfabetico ingrese 1")
+	print("Si desea ordenarlas por cantidad de letras ingrese 2")
+
+	ordenar = str(input())
+
+	if ordenar == "1":
+		if palabra_1 > palabra_2 and palabra_2 > palabra_3:
+			print(palabra_1, palabra_2, palabra_3)
+		elif palabra_1 > palabra_3 and palabra_3 > palabra_2:
+			print(palabra_1, palabra_3, palabra_2)
+		elif palabra_2 > palabra_1 and palabra_1 > palabra_3:
+			print(palabra_2, palabra_1, palabra_3)
+		elif palabra_2 > palabra_3 and palabra_3 > palabra_1:
+			print(palabra_2, palabra_3, palabra_1)
+		elif palabra_3 > palabra_1 and palabra_1 > palabra_2:
+			print(palabra_3, palabra_1, palabra_2)
+		elif palabra_3 > palabra_2 and palabra_2 > palabra_1:
+			print(palabra_3, palabra_2, palabra_1)
+	elif ordenar == "2":
+		if len(palabra_1) > len(palabra_2) and len(palabra_2) > len(palabra_3):
+			print(palabra_1, palabra_2, palabra_3)
+		elif len(palabra_1) > len(palabra_3) and len(palabra_3) > len(palabra_2):
+			print(palabra_1, palabra_3, palabra_2)
+		elif len(palabra_2) > len(palabra_1) and len(palabra_1) > len(palabra_3):
+			print(palabra_2, palabra_1, palabra_3)
+		elif len(palabra_2) > len(palabra_3) and len(palabra_3) > len(palabra_1):
+			print(palabra_2, palabra_3, palabra_1)
+		elif len(palabra_3) > len(palabra_1) and len(palabra_1) > len(palabra_2):
+			print(palabra_3, palabra_1, palabra_2)
+		elif len(palabra_3) > len(palabra_2) and len(palabra_2) > len(palabra_1):
+			print(palabra_3, palabra_2, palabra_1)
+	else:
+		print("El numero ingresado no es valido.")
 
 def ej5():
 		print('Ejercicios de práctica con números')
@@ -154,12 +203,13 @@ def ej5():
 
 		promedio = ( temperatura_1 + temperatura_2 + temperatura_3 ) / 3
 
+		print("La temperatura promedio es {}".format(promedio))
 
 
 if __name__ == '__main__':
 		print("Ejercicios de práctica")
-		#ej1()
-		#ej2()
-		#ej3()
-		#ej4()
+		ej1()
+		ej2()
+		ej3()
+		ej4()
 		ej5()

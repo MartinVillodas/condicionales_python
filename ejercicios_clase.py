@@ -184,10 +184,17 @@ def ej4():
     # Transforma esas variables tipo texto y almacénalas
     # en nuevas variables númericas (int)
 
-    
+    num_1 = int(texto_1)
+    num_2 = int(texto_2)
 
     # Repita el proceso, ¿Cuál de las nuevas variables es mayor?
     # Imprima en pantalla según corresponda
+
+    if num_1 > num_2:
+        print("{} es mayor que {}".format(num_1,num_2))
+    else:
+        print("{} es mayor que {}".format(num_2,num_1))
+
 
     # Para pensar!
     # ¿Por qué cree que texto_2 es mayor a texto_1?
@@ -200,7 +207,7 @@ def ej4():
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    #ej1()
-    #ej2()
-    #ej3()
-    #ej4()
+    ej1()
+    ej2()
+    ej3()
+    ej4()
